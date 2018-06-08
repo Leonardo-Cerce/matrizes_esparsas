@@ -4,7 +4,7 @@
 
 #include "funcoes.h"
 
-#define NUM_MAX_VAL 100000000
+#define NUM_MAX_VAL 50000000
 
 int main()
 {
