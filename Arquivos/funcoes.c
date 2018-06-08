@@ -83,6 +83,7 @@ int addvalor(matriz* nova, int numlin, int numcol, int nmax, int numat)
         {
         fflush(stdin);
         scanf("%d",&nlin);
+        nlin=nlin-1;
         if(nlin<numlin&&nlin>=0)
         {
             break;
@@ -94,6 +95,7 @@ int addvalor(matriz* nova, int numlin, int numcol, int nmax, int numat)
         {
         fflush(stdin);
         scanf("%d",&ncol);
+        ncol=ncol-1;
         if(ncol<numcol&&ncol>=0)
         {
             break;
@@ -136,6 +138,7 @@ void consultar(matriz* achar, int numlin, int numcol, int maxi)
         {
         fflush(stdin);
         scanf("%d",&nlin);
+        nlin=nlin-1;
         if(nlin<numlin&&nlin>=0)
         {
             break;
@@ -147,6 +150,7 @@ void consultar(matriz* achar, int numlin, int numcol, int maxi)
         {
         fflush(stdin);
         scanf("%d",&ncol);
+        ncol=ncol-1;
         if(ncol<numcol&&ncol>=0)
         {
             break;
@@ -203,6 +207,7 @@ void somalin(matriz* somando, int nlinmax, int ncol, int atual)
     {
         fflush(stdin);
         scanf("%d",&nlin);
+        nlin=nlin-1;
         if(nlin>=0&&nlin<nlinmax)
         {
             break;
@@ -237,6 +242,7 @@ void somacol(matriz* somando2, int ncolmax, int nlin, int atual)
     {
         fflush(stdin);
         scanf("%d",&ncol);
+        ncol=ncol-1;
         if(ncol>=0&&ncol<ncolmax)
         {
             break;
