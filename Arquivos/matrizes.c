@@ -1,7 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <windows.h>
-
 #include "funcoes.h"
 
 #define NUM_MAX_VAL 50000000
