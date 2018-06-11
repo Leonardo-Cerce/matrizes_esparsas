@@ -1,4 +1,4 @@
-#include "funcoes.h"
+#include "header.h"
 
 int linhas(void)
 {

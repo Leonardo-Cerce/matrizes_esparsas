@@ -1,4 +1,4 @@
-#include "funcoes.h"
+#include "header.h"
 
 #define NUM_MAX_VAL 50000000
 
