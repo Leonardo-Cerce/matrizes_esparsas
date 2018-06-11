@@ -174,11 +174,11 @@ void consultar(matriz* achar, int numlin, int numcol, int maxi)
     }
     if(find_col==find_lin&&find_col!=-1)
     {
-        printf("Valor na linha %d e coluna %d = %d\n\n",nlin,ncol,achar[find_col].valor);
+        printf("Valor na linha %d e coluna %d = %d\n\n",nlin+1,ncol+1,achar[find_col].valor);
     }
     else
     {
-        printf("Valor na linha %d e coluna %d = 0\n\n",nlin,ncol);
+        printf("Valor na linha %d e coluna %d = 0\n\n",nlin+1,ncol+1);
     }
     system("pause");
     printf("\n\n");
@@ -217,14 +217,7 @@ void somalin(matriz* somando, int nlinmax, int ncol, int atual)
             soma+=somando[i].valor;
         }
     }
-    if(soma!=0)
-    {
-        printf("Soma dos valores da linha %d = %d",nlin,soma);
-    }
-    if(soma==0)
-    {
-        printf("Soma dos valores da linha %d = 0",nlin);
-    }
+        printf("Soma dos valores da linha %d = %d",nlin+1,soma);
 }
 
 void somacol(matriz* somando2, int ncolmax, int nlin, int atual)
@@ -252,12 +245,5 @@ void somacol(matriz* somando2, int ncolmax, int nlin, int atual)
             soma+=somando2[i].valor;
         }
     }
-    if(soma!=0)
-    {
-        printf("Soma dos valores da coluna %d = %d",ncol,soma);
-    }
-    if(soma==0)
-    {
-        printf("Soma dos valores da coluna %d = 0",ncol);
-    }
+        printf("Soma dos valores da coluna %d = %d",ncol+1,soma);
 }
