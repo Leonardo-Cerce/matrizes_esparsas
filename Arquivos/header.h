@@ -7,7 +7,7 @@ typedef struct
 {
     int linha;
     int coluna;
-    int valor;
+    float valor;
 
 }matriz;
 
@@ -24,7 +24,3 @@ void consultar(matriz*,int,int,int);
 void somalin(matriz*,int,int,int);
 
 void somacol(matriz*,int,int,int);
-
-int menu(void);
-
-void splash(void);

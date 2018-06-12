@@ -42,32 +42,33 @@ int colunas(void)
 
 int testav(char k)
 {
-    int i;
+    int i=1;
+    int r;
 
-    i=k-'0';
+    r=k-'0';
 
-    if(i<1||i>8)
+    if(r<1||r>7)
     {
-        for(;;)
+        while(i)
         {
         printf("Opcao invalida.Tente novamente.\n");
+        fflush(stdin);
         scanf("%c",&k);
-        i=k-'0';
-        if(i>=1&&i<=8)
+        r=k-'0';
+        if(r>=1&&r<8)
         {
             i=0;
         }
-
         }
     }
-return i;
+return r;
 }
 
 int addvalor(matriz* nova, int numlin, int numcol, int nmax, int numat)
 {
     int nlin;
     int ncol;
-    int valor;
+    float valor;
     char teste;
     int i=1;
 
@@ -100,7 +101,7 @@ int addvalor(matriz* nova, int numlin, int numcol, int nmax, int numat)
         }
     printf("Digite o valor a ser inserido: ");
     fflush(stdin);
-    scanf("%d",&valor);
+    scanf("%f",&valor);
     nova[numat].coluna=ncol;
     nova[numat].linha=nlin;
     nova[numat].valor=valor;
@@ -174,7 +175,7 @@ void consultar(matriz* achar, int numlin, int numcol, int maxi)
     }
     if(find_col==find_lin&&find_col!=-1)
     {
-        printf("Valor na linha %d e coluna %d = %d\n\n",nlin+1,ncol+1,achar[find_col].valor);
+        printf("Valor na linha %d e coluna %d = %.2f\n\n",nlin+1,ncol+1,achar[find_col].valor);
     }
     else
     {
@@ -195,7 +196,7 @@ void consultar(matriz* achar, int numlin, int numcol, int maxi)
 void somalin(matriz* somando, int nlinmax, int ncol, int atual)
 {
     int nlin;
-    int soma=0;
+    float soma=0;
     int i;
 
     printf("Digite o numero da linha que deseja obter a soma dos valores: ");
@@ -217,13 +218,13 @@ void somalin(matriz* somando, int nlinmax, int ncol, int atual)
             soma+=somando[i].valor;
         }
     }
-        printf("Soma dos valores da linha %d = %d",nlin+1,soma);
+        printf("Soma dos valores da linha %d = %.2f",nlin+1,soma);
 }
 
 void somacol(matriz* somando2, int ncolmax, int nlin, int atual)
 {
     int ncol;
-    int soma=0;
+    float soma=0;
     int i;
 
     printf("Digite o numero da coluna que deseja obter a soma dos valores: ");
@@ -245,5 +246,5 @@ void somacol(matriz* somando2, int ncolmax, int nlin, int atual)
             soma+=somando2[i].valor;
         }
     }
-        printf("Soma dos valores da coluna %d = %d",ncol+1,soma);
+        printf("Soma dos valores da coluna %d = %.2f",ncol+1,soma);
 }
