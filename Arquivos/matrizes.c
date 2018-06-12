@@ -1,6 +1,6 @@
 #include "header.h"
 
-#define NUM_MAX_VAL 50000000
+#define NUM_MAX_VAL 1000000
 
 int main()
 {
