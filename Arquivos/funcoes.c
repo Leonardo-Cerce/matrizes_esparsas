@@ -80,7 +80,6 @@ int addvalor(matriz* nova, int numlin, int numcol, int nmax, int numat)
         {
         fflush(stdin);
         scanf("%d",&nlin);
-        nlin=nlin-1;
         if(nlin<numlin&&nlin>=0)
         {
             break;
@@ -92,7 +91,6 @@ int addvalor(matriz* nova, int numlin, int numcol, int nmax, int numat)
         {
         fflush(stdin);
         scanf("%d",&ncol);
-        ncol=ncol-1;
         if(ncol<numcol&&ncol>=0)
         {
             break;
@@ -135,7 +133,6 @@ void consultar(matriz* achar, int numlin, int numcol, int maxi)
         {
         fflush(stdin);
         scanf("%d",&nlin);
-        nlin=nlin-1;
         if(nlin<numlin&&nlin>=0)
         {
             break;
@@ -147,7 +144,6 @@ void consultar(matriz* achar, int numlin, int numcol, int maxi)
         {
         fflush(stdin);
         scanf("%d",&ncol);
-        ncol=ncol-1;
         if(ncol<numcol&&ncol>=0)
         {
             break;
@@ -175,11 +171,11 @@ void consultar(matriz* achar, int numlin, int numcol, int maxi)
     }
     if(find_col==find_lin&&find_col!=-1)
     {
-        printf("Valor na linha %d e coluna %d = %.2f\n\n",nlin+1,ncol+1,achar[find_col].valor);
+        printf("Valor na linha %d e coluna %d = %.2f\n\n",nlin,ncol,achar[find_col].valor);
     }
     else
     {
-        printf("Valor na linha %d e coluna %d = 0\n\n",nlin+1,ncol+1);
+        printf("Valor na linha %d e coluna %d = 0\n\n",nlin,ncol);
     }
     system("pause");
     printf("\n\n");
@@ -204,7 +200,6 @@ void somalin(matriz* somando, int nlinmax, int ncol, int atual)
     {
         fflush(stdin);
         scanf("%d",&nlin);
-        nlin=nlin-1;
         if(nlin>=0&&nlin<nlinmax)
         {
             break;
@@ -218,7 +213,7 @@ void somalin(matriz* somando, int nlinmax, int ncol, int atual)
             soma+=somando[i].valor;
         }
     }
-        printf("Soma dos valores da linha %d = %.2f",nlin+1,soma);
+        printf("Soma dos valores da linha %d = %.2f",nlin,soma);
 }
 
 void somacol(matriz* somando2, int ncolmax, int nlin, int atual)
@@ -232,7 +227,6 @@ void somacol(matriz* somando2, int ncolmax, int nlin, int atual)
     {
         fflush(stdin);
         scanf("%d",&ncol);
-        ncol=ncol-1;
         if(ncol>=0&&ncol<ncolmax)
         {
             break;
@@ -246,5 +240,5 @@ void somacol(matriz* somando2, int ncolmax, int nlin, int atual)
             soma+=somando2[i].valor;
         }
     }
-        printf("Soma dos valores da coluna %d = %.2f",ncol+1,soma);
+        printf("Soma dos valores da coluna %d = %.2f",ncol,soma);
 }
