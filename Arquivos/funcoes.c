@@ -169,7 +169,7 @@ void consultar(matriz* achar, int numlin, int numcol, int maxi)
         }
         find_lin=-1;
     }
-    if(find_col==find_lin&&find_col!=-1)
+    if(find_lin!=-1&&find_col!=-1)
     {
         printf("Valor na linha %d e coluna %d = %.2f\n\n",nlin,ncol,achar[find_col].valor);
     }
