@@ -14,7 +14,7 @@ int main()
     }
     }
     printf("\n\n\n");
-    Sleep(4000);
+    //Sleep(4000);
     system("cls");
 
     char opt='\0';
@@ -95,6 +95,8 @@ int main()
             del=1;
             system("pause");
             break;
+            lin=0;
+            col=0;
             }
             printf("Nao ha matriz para ser apagada.\n\n");
             system("pause");
