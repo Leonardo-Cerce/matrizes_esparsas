@@ -1,4 +1,6 @@
-O objetivo deste trabalho foi o de criar um programa, na Linguagem C, que permita a criaÁ„o e manipulaÁ„o de matrizes esparsas. 
-Ele deve ser capaz de criar as matrizes, adicionar, consultar e fazer a soma dos valores presentes na mesma, e apag·-la.
+# Matrizes esparsas
+
+O objetivo deste trabalho foi o de criar um programa, na Linguagem C, que permita a cria√ß√£o e manipula√ß√£o de matrizes esparsas. 
+Ele deve ser capaz de criar as matrizes, adicionar, consultar e fazer a soma dos valores presentes na mesma, e apag√°-la.
 
 Equipe: Leonardo Cerce Guioto - 10716640
